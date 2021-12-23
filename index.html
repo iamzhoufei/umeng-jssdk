@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://xiexie-frontend.oss-cn-hangzhou.aliyuncs.com/h5/common/icons/512x512.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="keywords" content="游戏试玩、游戏下载、游派、有赚">
+    <meta name="description" content="游派是一款游戏精品推荐的APP，旨在给游戏玩家推荐有趣好玩的游戏。">
+    <title>游派 | 有的玩不止于玩</title>
+
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+  </head>
+  <body>
+
+    <div id="app" style="height:100%"></div>
+    <div id="guide-open-browser-target"></div>
+    <div id="guide-download-target"></div>
+    <div id="loading-target"></div>
+    <div id="login-target"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+
+    <!-- 引入 eruda -->
+    <script type="text/javascript">
+      ;(function () {
+          var src = '//cdn.jsdelivr.net/npm/eruda';
+          if (!/debug=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+          document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+          document.write('<scr' + 'ipt>eruda.init({useShadowDom: true});</scr' + 'ipt>');
+      })();
+    </script>
+
+    <!-- 友盟统计代码 -->
+    <script type="text/javascript">
+      document.write(
+        unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1280150912'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1280150912' type='text/javascript'%3E%3C/script%3E")
+      );
+      var _czc = _czc || [];
+      _czc.push(['_setAccount', 'cnzz_stat_icon_1280150912']);
+    </script>
+
+    <!-- iOS bridge -->
+    <script type="text/javascript">
+      window.setupWebViewJavascriptBridge = function (callback) {
+        if (window.WebViewJavascriptBridge) {
+            return callback(WebViewJavascriptBridge);
+        }
+        if (window.WVJBCallbacks) {
+            return window.WVJBCallbacks.push(callback);
+        }
+        window.WVJBCallbacks = [callback];
+        const WVJBIframe = document.createElement('iframe');
+        WVJBIframe.style.display = 'none';
+        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+        document.documentElement.appendChild(WVJBIframe);
+        setTimeout(function() {
+            document.documentElement.removeChild(WVJBIframe)
+        }, 0);
+	    }
+    </script>
+
+    <!-- 友盟U-Link -->
+    <script src="https://g.alicdn.com/jssdk/u-link/index.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+@font-face {
+  /* 重命名字体名 */
+  font-family: 'ZhenyanGB';
+  /* 引入字体 */
+  src: url('https://xiexie-frontend.oss-cn-hangzhou.aliyuncs.com/font-lib/RuiZiZhenYanTiMianFeiShangYong-2.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

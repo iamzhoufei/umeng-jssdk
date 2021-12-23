@@ -1,0 +1,25 @@
+@import './normalize.css';
+@import './font.css';
+
+#app{
+    height: 100%;
+}
+
+.swiper-container .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+  /*之前是ease-out*/
+  -moz-transition-timing-function: linear;
+  -ms-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear !important;
+}
+
+.swiper-slide{
+  display: flex;
+  align-items: center;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
